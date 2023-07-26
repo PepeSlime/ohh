@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicago</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> </script>
+
+</head>
+
+<body class="loginbody">
+    <header class="loginhead ">
+
+        <h2></h2>
+       <img class="logoimg"src="/img/logo velha.png" alt="">
+
+        <nav class="navegar">
+            <ion-icon name="search" class="lupinha"></ion-icon>
+            <input type="text" placeholder="Pesquisar..." class="barrinha">
+            <button name="close" class="pesq">Pesquisar</button>
+            <a href="">Início</a>
+            <a href="">Sobre</a>
+            <a href="">Loja</a>
+            <a href="">Meus Produtos</a>
+            <a href="rank.html">Pontuação</a>
+            <button class="btn-popup">Login</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Senha</label>
+                </div>
+
+                <div class="esqueci-senha">
+                    <label> <input type="checkbox">
+                        Lembre-me</label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+
+                <button type="submit" class="btn">
+                    Login</button>
+
+                <div class="login-register">
+                    <p>Não tem uma conta?
+                        <a href="#" class="register-link"
+                            onclick="toggleRegistrationMode('user')/*para ir direto para o cadastro de usuario*/">Cadastre-se
+                        </a>
+
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register ">
+            <h2>Cadastro</h2>
+            <br>
+            
+                <button class="btn-user" onclick="toggleRegistrationMode('user')">Cadastro de Usuário</button>
+                <button class="btn-vendor" onclick="toggleRegistrationMode('vendor')">Cadastro de Vendedor</button>
+            
+
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Usuário</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Senha</label>
+                </div>
+
+
+                <!-- Adicione um novo wrapper para os campos de vendedor -->
+                <div class="vendor-fields">
+                    <!-- Campos adicionais de cadastro de vendedor aqui -->
+                    <!-- Exemplo: -->
+                    <div id="vendor-fields">
+                        <div class="input-box date-input">
+                            <span class="icon"><ion-icon name="calendar"></ion-icon></span>
+                            <input type="date" required>
+                            <label>Data de Nascimento</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="esqueci-senha">
+                    <label><input type="checkbox">Estou de acordo com os termos e condições</label>
+                </div>
+
+                <button type="submit" class="btn">Cadastrar</button>
+
+                <div class="login-register">
+                    <p>Já tem uma conta?<a href="" class="login-link"> Login
+
+                        </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src="login.js"></script>
+</body>
+
+
+</html>

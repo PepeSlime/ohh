@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prêmios/Classificação</title>
+    <link rel="stylesheet" href="premios.css">
+</head>
+
+<body>
+    <header class="loginhead ">
+
+        <h2></h2>
+        <img class="logoimg" src="/img/logo velha.png" alt="">
+
+        <nav class="navegar">
+            <ion-icon name="search" class="lupinha"></ion-icon>
+            <input type="text" placeholder="Pesquisar..." class="barrinha">
+            <button name="close" class="pesq">Pesquisar</button>
+            <a href="">Início</a>
+            <a href="">Sobre</a>
+            <a href="">Loja</a>
+            <a href="">Meus Produtos</a>
+            <a href="rank.html">Pontuação</a>
+            <a href="">Doar</a>
+            <button onclick="vaiLogin()" class="btn-popup">Login</button>
+        </nav>
+    </header>
+
+    <img class="trof" src="img/trof.png" alt="">
+
+    <div class="image-container">
+
+        <div class="image-div form-box">
+            <img class="ouro" src="img/ouro-removebg-preview.png" alt="Imagem 1">
+            <button class="btn-user" onclick="toggleRegistrationMode('user')">Consumidor</button>
+            <button class="btn-vendor" onclick="toggleRegistrationMode('vendor')">Vendedor</button>
+
+            <img class="expbar" src="img/expb2.png" alt="">
+            <h2 class="expinf">1201 a 1850 exp</h2>
+            <div class="user-info">
+                <h2>3 cupons de 15% desconto (Cupom não acumulativo) 1 vale presente no valor de R$60,00</h2>  
+            </div>
+            <div class="vendor-info" style="display:none;">
+                <h2>6,5% comissão de vendas para o site</h2>
+            </div>
+            <button class="claim">Resgatar</button>
+        </div>
+
+        <div class="image-div form-boxplat">
+            <img class="platina" src="img/platina-removebg-preview.png" alt="Imagem 2">
+            <button class="btn-user" onclick="toggleRegistrationMode1('user1')">Consumidor</button>
+            <button class="btn-vendor" onclick="toggleRegistrationMode1('vendor1')">Vendedor</button>
+            <img class="expbar" src="img/expb2.png" alt="">
+            <h2 class="expinf">651 a 1200 exp</h2>
+            <div class="user-info1">
+                <h2>3 cupons; 2-10% e 1-15% de desconto (Cupom não acumulativo) 1 vale presente no valor de R$40</h2>  
+            </div>
+            <div class="vendor-info1" style="display:none;">
+                <h2>8,5% comissão de vendas para o site</h2>
+            </div>
+            <button class="claim">Resgatar</button>
+        </div>
+
+        <div class="image-div form-boxprat">
+            <img class="prata" src="img/prata-removebg-preview.png" alt="Imagem 3">
+            <button class="btn-user" onclick="toggleRegistrationMode2('user2')">Consumidor</button>
+            <button class="btn-vendor" onclick="toggleRegistrationMode2('vendor2')">Vendedor</button>
+            <img class="expbar" src="img/expb2.png" alt="">
+            <h2 class="expinf">251 a 650 exp</h2>
+            <div class="user-info2">
+                <h2>3 cupons de 10% desconto (Cupom não acumulativo) 1 vale presente no valor de R$20</h2>  
+            </div>
+            <div class="vendor-info2" style="display:none;">
+                <h2>11% comissão de vendas para o site</h2>
+            </div>
+            <button class="claim">Resgatar</button>
+        </div>
+
+        <div class="image-div form-boxbron">
+            <img class="bronze" src="img/bronze-removebg-preview.png" alt="Imagem 3">
+            <button class="btn-user" onclick="toggleRegistrationMode3('user3')">Consumidor</button>
+            <button class="btn-vendor" onclick="toggleRegistrationMode3('vendor3')">Vendedor</button>
+            <img class="expbar" src="img/expb2.png" alt="">
+            <h2 class="expinf">0 a 250 exp</h2>
+            <div class="user-info3">
+                <h2>3 cupons de 10% desconto (Cupom não acumulativo)</h2>  
+            </div>
+            <div class="vendor-info3" style="display:none;">
+                <h2>14% comissão
+                    de vendas para o site</h2>
+            </div>
+            <button class="claim">Resgatar</button>
+        </div>
+    </div>
+
+
+    <script src="premios.js"></script>
+</body>
+
+</html>

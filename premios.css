@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/*header*/
+.loginhead{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+
+}
+.logoimg {
+    width: 85px; 
+    height: auto; /* A altura será ajustada proporcionalmente à largura definida */
+    position: absolute; /* Adicione position: absolute para posicionar a imagem */
+    left: 10%; /* Coloque a imagem no meio horizontal do header */
+    transform: translateX(-50%); /* Centralize a imagem corretamente */
+    margin-left: -100px;
+}
+
+.logoimg:hover{
+    transform: translateX(-50%) scale(1.1);
+    transition: 1.5s;
+}
+
+.loginhead {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 66px;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+
+
+.navegar a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navegar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navegar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navegar .btn-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff; 
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 1.75s;   
+}
+
+.navegar .btn-popup:hover {
+    background: #f0232d;
+    color: #fff;
+    border-color: #f0232d;
+}
+
+.navegar .lupinha {
+    height: 25px;
+    width: 25px;
+}
+
+input.barrinha {
+    border-radius: 6px;
+    color: #fff;
+    border-color: #fff;
+    padding: 3px;
+}
+input.barrinha:focus::placeholder {
+    color: #fff;
+}
+
+input.barrinha:focus {
+    outline: none; /* Remove o contorno padrão do input ao receber foco */
+    box-shadow: 0 0 4px rgba(255, 0, 0, 0.4); /* Sombra ao receber foco */
+    background: #ffb14b;
+    border-color: #ffb14b;
+  }
+
+  
+
+  .lupinha {
+    color: #fff;
+    top: 7px;
+    position: relative;
+  }
+
+.lupinha:hover {
+    color: #f0232d; /* Cor do ícone ao passar o mouse */
+    transition: 0.25s;
+  }
+  
+  .lupinha:active {
+    color: #ff0000; /* Cor do ícone quando clicado */
+  }
+
+  .pesq{
+    font-size: 13px;
+    position: relative;
+    top: -0px;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 6px;
+    padding: 3px;
+   border-color: #fff;
+  }
+
+  .pesq:hover {
+    cursor: pointer;
+    transition: 0.25s;
+    color: #fff;
+    background-color: #f0232d;
+    border-color: #f0232d;
+  }
+/*header*/
+
+@keyframes pulsarest {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes chaqualhar {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-2px, -2px); }
+    50% { transform: translate(2px, 2px); }
+    75% { transform: translate(-2px, 2px); }
+    100% { transform: translate(2px, -2px); }
+  }
+
+  @keyframes brilho {
+    0% { box-shadow: 0 0 5px rgb(255, 253, 255); }
+    50% { box-shadow: 0 0 20px rgb(255, 255, 255); }
+    100% { box-shadow: 0 0 5px rgb(255, 255, 255); }
+}
+
+.image-div.form-box, .form-boxbron, .form-boxplat, .form-boxprat{
+    animation: brilho 2s infinite;
+}
+
+.trof {
+    animation: chaqualhar 0.5s infinite;
+}
+
+.trof {
+    position: absolute;
+    width: auto;
+    height: 140px;
+    margin-top: -90px;
+    margin-left: 600px;
+}
+
+.image-container {
+    text-align: center; /* Centraliza as divs horizontalmente */
+    margin-top: 150px;
+  }
+  
+  .image-div {
+    display: inline-block; 
+    margin: 60px; 
+  }
+  
+  .image-div img {
+    width: 120px; 
+    height: auto; 
+  }
+  
+  body {
+    background-image: url(img/rankin.avif);
+    background-size: cover;
+  }
+
+  .image-div.form-box, .form-boxplat, .form-boxprat, .form-boxbron{
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(255, 254, 254, 0.5);
+    height: 400px;
+    width: 210px;
+    border-radius: 15px;
+    background: transparent;
+  }
+
+ .btn-user {
+    width: 40%;
+    height: 20px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #000;
+    font-weight: 500;
+    position: absolute;
+    margin-top: 115px;
+    margin-left: -150px;
+ }
+
+ .btn-user:focus {
+background: #f0232d;
+color: #fff;
+ }
+
+ .btn-vendor {
+    width: 40%;
+    height: 20px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #000;
+    font-weight: 500;
+    position: absolute;
+    margin-top: 115px;
+    margin-left: -60px;
+ }
+
+ .btn-vendor:focus {
+    background: #f0232d;
+    color: #fff;
+    border-color: #f0232d;
+     }
+
+     .expbar {
+        position: absolute;
+        margin-top: 140px;
+        margin-left: -120px;
+     }
+
+   .user-info{
+    margin-top: 70px;
+    font-size: 15px;
+    padding: 6px;
+    color: #fff;
+   }  
+  
+   .vendor-info{
+    margin-top: 70px;
+    font-size: 15px;
+    padding: 6px;
+    color: #fff;
+   }  
+
+   .vendor-info1{
+    margin-top: 70px;
+    font-size: 15px;
+    padding: 6px;
+    color: #fff;
+   } 
+   .user-info1{
+    margin-top: 70px;
+    font-size: 13px;
+    padding: 6px;
+    color: #fff;
+   }  
+  
+   .vendor-info2{
+    margin-top: 70px;
+    font-size: 15px;
+    padding: 6px;
+    color: #fff;
+   }  
+
+   .user-info2{
+    margin-top: 70px;
+    font-size: 15px;
+    padding: 6px;
+    color: #fff;
+   }  
+
+   .vendor-info3{
+    margin-top: 70px;
+    font-size: 15px;
+    padding: 6px;
+    color: #fff;
+   }  
+
+   .user-info3{
+    margin-top: 70px;
+    font-size: 15px;
+    padding: 6px;
+    color: #fff;
+   }
+  
+   .expinf {
+    position: absolute;
+    font-weight: normal;
+    color: aqua;
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 20px;
+   }
+   
+   .claim {
+    position: absolute;
+    background: #f0232d;
+    color: #fff;
+    border-color: #f0232d;
+    border-radius: 7px;
+    animation: pulsarest 2s infinite;
+    margin-left: -50px;
+    font-size: 20px;
+    margin-top: -10px;
+   }
+
+   .claim:hover {
+    background: #f70411;
+    color: #fff;
+    border-color: #f70411;
+    transform: translateX(0%) scale(1.2);
+    transition: 0.55s;
+    cursor: pointer;
+}
+
+.form-box {
+    margin-left: -940px;
+}
+
+.form-boxplat {
+    position: absolute;
+
+}
+
+.form-boxprat {
+    position: absolute;
+    margin-left: 400px;
+}
+
+.form-boxbron {
+    position: absolute;
+    margin-left: 725px;
+}
+
+

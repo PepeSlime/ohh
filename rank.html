@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontuação</title>
+    <link rel="stylesheet" href="rank.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> </script>
+</head>
+
+<body>
+    <header class="loginhead ">
+
+        <h2></h2>
+        <img class="logoimg" src="/img/logo velha.png" alt="">
+
+        <nav class="navegar">
+            <ion-icon name="search" class="lupinha"></ion-icon>
+            <input type="text" placeholder="Pesquisar..." class="barrinha">
+            <button name="close" class="pesq">Pesquisar</button>
+            <a href="">Início</a>
+            <a href="">Sobre</a>
+            <a href="">Loja</a>
+            <a href="">Meus Produtos</a>
+            <a href="rank.html">Pontuação</a>
+            <a href="">Doar</a>
+            <button onclick="vaiLogin()" class="btn-popup">Login</button>
+        </nav>
+    </header>
+
+    <div class="point form-box">
+        <h1>Pontuação</h1>
+        <p class="first">Para aumentar sua pontuação, siga as seguintes ações:</p>
+
+        <div class="btn1c">
+            <button class="compreb">Comprar</button>
+            <div class="father1">
+                <h4>A cada compra com o valor de R$5,00 você irá receber 1 ponto de experiêcia.</h4>
+                <div class="tabebb1">
+                    <table>
+                        <h4>Exemplo</h4>
+                        <tr>
+                            <td>R$ 100,00 </td>
+                            <td>20 Pontos de exp.(experiência)</td>
+
+                        </tr>
+                        <tr>
+                            <td>R$ 350,00</td>
+                            <td>70 Pontos de exp.</td>
+                        </tr>
+
+                        <tr>
+                            <td>R$ 733,00</td>
+                            <td>146,6 Pontos de exp.</td>
+                        </tr>
+                        <!-- Adicione mais linhas conforme necessário -->
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn2v">
+            <button>Vender</button>
+
+            <div class="father2">
+                <h4 class="test2">A cada venda você irá receber 0,25 vezes o valor do produto em ponto de exp.</h4>
+                <div class="tabebb2">
+                    <table>
+                        <h4>Exemplo</h4>
+                        <tr>
+                            <td>R$ 100,00</td>
+                            <td>25 Pontos de exp.(experiêcia)</td>
+                        </tr>
+
+                        <tr>
+                            <td>R$ 350,00</td>
+                            <td>87,5 Pontos de exp.</td>
+                        </tr>
+
+                        <tr>
+                            <td>R$ 733,00</td>
+                            <td>183,25 Pontos de exp.</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="btn3d">
+            <button>Doar</button>
+            <div class="father3">
+                <h4 class="test3">A cada doação você irá receber 0,5 pontos de exp.</h4>
+                <div class="tabebb3">
+                    <table>
+                        <h4>Exemplo</h4>
+
+                        <tr>
+                            <td>6 Doações</td>
+                            <td>3 Pontos de exp.(experiência)</td>
+                        </tr>
+
+                        <tr>
+                            <td>30 Doações</td>
+                            <td>15 Pontos de exp.(experiência)</td>
+                        </tr>
+
+                        <tr>
+                            <td>75 Doações</td>
+                            <td>37,5 Pontos de exp.(experiência)</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="sittest">
+        <h3>Sistema de Troca</h3>
+
+        <p class="second">O usuário terá duas opções:</p>
+        <div class="topi">
+            <h4>Usar os cupons agora e/ou o vale de presente.</h4>
+            <h4>Guardar para as próximas compras.</h4>
+        </div>
+    </div>
+
+
+        <!-- Botão "Pontuação" -->
+        <button onclick="vaiPrem()" class="btn-pontuacao">Prêmios</button>
+
+    </div>
+    <script src="rank.js"></script>
+</body>
+
+</html>
